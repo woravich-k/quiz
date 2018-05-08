@@ -197,7 +197,7 @@ var watch_dist;
 var firstTimeDist = true;
 var prev_closestPt = "";
 var inbound;
-var cutoffDist = 1; // kilometers
+var cutoffDist = 0.1; // kilometers
 var geoJSON; 
 var pts = [];
 var closest_i;
@@ -427,7 +427,7 @@ function newAcc(){
 	document.getElementById("userPassword2").style.visibility = "visible";
 	document.getElementById("invalidLogin").style.visibility = "hidden";
 	document.getElementById("loginTitle").innerHTML = "Create New Account";
-	document.getElementById("changeLoginPage").innerHTML = "Login with previous account <button onclick= 'oldAcc()' style = 'border: none; color: blue; padding: 0px; background-color: Transparent; cursor:pointer; margin: 0px;' > Click Here </button>";
+	document.getElementById("changeLoginPage").innerHTML = "Login instead. <a onclick= 'oldAcc(); return false;'> Click Here </button>";
 	document.getElementById("userPassword").value = "";
 	document.getElementById("userPassword2").value = "";
 	document.getElementById("userAccount").value = "";
@@ -444,7 +444,7 @@ function oldAcc(){
 	document.getElementById("userPassword2").style.visibility = "hidden";
 	document.getElementById("loginTitle").innerHTML = "Login";
 	document.getElementById("invalidLogin").style.visibility = "hidden";
-	document.getElementById("changeLoginPage").innerHTML = "Don't have an account? <button onclick= 'newAcc()' style = 'border: none; color: blue; padding: 0px; background-color: Transparent; cursor:pointer; margin: 0px;' > Click Here </button>";
+	document.getElementById("changeLoginPage").innerHTML = "Don't have an account? <a onclick= 'newAcc(); return false;' > Click Here </a>";
 	document.getElementById("userPassword").value = "";
 	document.getElementById("userPassword2").value = "";
 	document.getElementById("userAccount").value = "";

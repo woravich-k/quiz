@@ -191,7 +191,7 @@
 	<div id = "login" align="center">
 		<div id = "loginBK"></div>
 		<div id = "loginWindow" class = "demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col">
-		 <h1 id = "loginTitle" class ="mdl-card__title-text" style = "margin: 5px 10px 10px;"> Login </h1>
+		 <h1 id = "loginTitle" class ="mdl-card__title-text" style = "margin: 5px 10px;"> Login </h1>
 		 <h1 class = "mdl-card__title-text" style = "margin: 5px; font-size:15px"> Username </h1>
 		 <input id = "userAccount" type = "text" style = "display: block; margin: 0 auto;"; size = "25"  />
 		 <h1 class = "mdl-card__title-text" style = "margin: 5px; font-size:15px"> Password </h1>
@@ -199,8 +199,9 @@
 		 <h1 class = "mdl-card__title-text" style = "margin: 5px; font-size:15px; visibility: hidden;" id = "userPassword2_text"> Confirm password </h1>
 		 <input id = "userPassword2" type = "password" style = "display: block; margin: 0 auto; visibility: hidden;"; size = "25"  />
 		 <p id = "invalidLogin" class = "mdl-card__title-text" style = "font-size:12px; margin:5px; color: red; visibility: hidden;" > Invalid user or password!</p>
-		 <button id ="loginButton" class ="btn" style = "margin: 10px; display: block;" onclick = "login()" > Login </button>
-		 <p id="changeLoginPage" class = "mdl-card__title-text" style = "font-size:12px; margin:10px;"> Don't have an account? <button onclick= "newAcc()" class ="btn" style = "border: none; color: blue; padding: 0px; background-color: Transparent; cursor:pointer; margin: 0px;font-size:12px;" > Click Here </button></p> 
+		 <button id ="loginButton" class ="btn" style = "margin: 5px; display: block;" onclick = "login()" > Login </button>
+		 <p id="changeLoginPage" class = "mdl-card__title-text" style = "font-size:12px; margin: 0px 10px;"> Don't have an account? <a onclick= "newAcc(); return false;"  > Click Here </a></p>
+		 <p class = "mdl-card__title-text" style = "font-size:12px; margin:0px 10px;"><a href='./help.html'> Need Help?</a></p>
 		 
 		</div>
 	</div>
@@ -222,7 +223,7 @@
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
-            <li class="mdl-menu__item" onclick = "callDivChange();return false;">Get Help</li>
+            <li class="mdl-menu__item" onclick = "location.href='./help.html';">Get Help</li>
             
           </ul>
         </div>
