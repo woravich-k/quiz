@@ -8,45 +8,45 @@
   },
   "installed_plugins": {
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-battery-status": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-camera": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-media-capture": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-geolocation": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-globalization": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-vibration": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-compat": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     },
     "cordova-plugin-file": {
-      "PACKAGE_NAME": "BasicApp"
+      "PACKAGE_NAME": "QuizApp"
     }
   }
 }

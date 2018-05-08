@@ -557,8 +557,10 @@ function validateLogin(){
 				return
 		}
 		if (client.responseText == "invalid login"){
-			document.getElementById("invalidLogin").innerHTML = "Invalid user or password!";
+			document.getElementById("invalidLogin").innerHTML = "Invalid username or password!";
 			document.getElementById("invalidLogin").style.visibility = "visible";
+			document.getElementById("userAccount").style.border = "2px solid red";
+			document.getElementById("userPassword").style.border = "2px solid red";
 			return;
 		}
 		alert("login successful");
