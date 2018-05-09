@@ -1,5 +1,5 @@
 # quiz
-An location-based quiz application; working together with 'questions' and 'server' repositories
+A location-based quiz application; working together with 'questions' and 'server' repositories
 
 Some parts of this application are adapted from 
   - https//www.htmlgoodies.com/beyond/javascript/calculate-the-distance-between-two-points-in-your-web-apps.html
