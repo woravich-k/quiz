@@ -114,7 +114,7 @@ function createAcc(){
 //posting the account
 function processCreateAcc(postString){
 	client = new XMLHttpRequest();
-	client.open('POST','https://developer.cege.ucl.ac.uk:31083/createAcc/',true);
+	client.open('POST','https://www.woravich-k.com:49154/createAcc/',true);
 	client.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	client.onreadystatechange = accUploaded;
 	client.send(postString);
@@ -173,7 +173,7 @@ function login(){
 //server validate the account by doing query and response the id back
 function processLogin(postString){
 	client = new XMLHttpRequest();
-	client.open('POST','https://developer.cege.ucl.ac.uk:31083/validateLogin/',true);
+	client.open('POST','https://www.woravich-k.com:49154/validateLogin/',true);
 	client.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	client.onreadystatechange = validateLogin;
 	client.send(postString);
@@ -299,14 +299,14 @@ var geoJSON; //set it as global variable, so not be loaded often
 var pts = []; //the array that used to find the closest question within the cutoff distance.
 
 var closest_i;
-// var pts = [ [1,51.524616,-0.13818,"Warren Street","https://developer.cege.ucl.ac.uk:31083/WarrenStreet.html"], //id, lat, lon, name,shown URL
-			// [2,51.5567,-0.1380,"Tufnell Park","https://developer.cege.ucl.ac.uk:31083/TufnellPark.html"],
-			// [3,51.5592,-0.1342,"Tufnell House","https://developer.cege.ucl.ac.uk:31083/TufnellHouse.html"] ];
+// var pts = [ [1,51.524616,-0.13818,"Warren Street","https://www.woravich-k.com:49154/WarrenStreet.html"], //id, lat, lon, name,shown URL
+			// [2,51.5567,-0.1380,"Tufnell Park","https://www.woravich-k.com:49154/TufnellPark.html"],
+			// [3,51.5592,-0.1342,"Tufnell House","https://www.woravich-k.com:49154/TufnellHouse.html"] ];
 
 //load the question first
 //adapted from the practicle codes in the module
 function loadQuestion_trackDistance(){
-	var url = 'https://developer.cege.ucl.ac.uk:31083/getQuestionANS/'+document.getElementById("username").name;
+	var url = 'https://www.woravich-k.com:49154/getQuestionANS/'+document.getElementById("username").name;
 	client = new XMLHttpRequest();
 	
 	client.open('GET', url);
@@ -476,7 +476,7 @@ function checkAns(ans){
 //upload answer
 function postAns(postString){
 	client = new XMLHttpRequest();
-	client.open('POST','https://developer.cege.ucl.ac.uk:31083/postAns',true);
+	client.open('POST','https://www.woravich-k.com:49154/postAns',true);
 	client.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	client.onreadystatechange = ansUploaded;
 	client.send(postString);
@@ -584,7 +584,7 @@ function getData(layername){
 	}
 	if (lyr == "question" && !loadingQuestion){
 		// the server will return join table of all question with the answer of the user
-		url = 'https://developer.cege.ucl.ac.uk:31083/getQuestionANS/'+document.getElementById("username").name; //read user id from the html; userid is specify after user login
+		url = 'https://www.woravich-k.com:49154/getQuestionANS/'+document.getElementById("username").name; //read user id from the html; userid is specify after user login
 	}else{
 		alert("The layer is not loaded to the map, since it has already been existed.")
 		return
@@ -731,7 +731,7 @@ function checkScore(){
 		return
 	}
 	//if GeoJSON hasn't been loaded yet, then load JSON
-	var url = 'https://developer.cege.ucl.ac.uk:31083/getQuestionANS/'+document.getElementById("username").name;
+	var url = 'https://www.woravich-k.com:49154/getQuestionANS/'+document.getElementById("username").name;
 	client = new XMLHttpRequest();
 	
 	client.open('GET', url);
